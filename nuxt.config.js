@@ -59,7 +59,7 @@ export default {
   },
 
   router: {
-    base: '/lemans-stats/',
+    base: '/racingdashboard/',
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
