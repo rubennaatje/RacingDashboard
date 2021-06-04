@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{505:function(n,t,e){"use strict";e.r(t);var r={layout:"dashboard",asyncData:function(n){return{id:n.params.id}}},c=e(74),component=Object(c.a)(r,(function(){var n=this,t=n.$createElement;return(n._self._c||t)("p",[n._v(n._s(n.id))])}),[],!1,null,null,null);t.default=component.exports}}]);
