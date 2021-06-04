@@ -1,0 +1,68 @@
+<template>
+  <div>
+    <CommonRaceDashboard ref="dash" style="height: 100%" :edit="edit" />
+    <v-speed-dial
+      v-model="fab"
+      :bottom="true"
+      :right="true"
+      direction="top"
+      transition="slide-y-reverse-transition"
+    >
+      <template #activator>
+        <v-btn v-model="fab" color="blue darken-2" dark fab>
+          <v-icon v-if="fab"> mdi-close </v-icon>
+          <v-icon v-else> mdi-account-circle </v-icon>
+        </v-btn>
+      </template>
+      <v-btn fab dark small color="green" nuxt to="/">
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
+      <v-btn fab dark small color="indigo" nuxt @click="save">
+        <v-icon>mdi-gear</v-icon>
+      </v-btn>
+      <v-btn fab dark small color="red" @click="edit = !edit">
+        <v-icon>mdi-pencil</v-icon>
+      </v-btn>
+      <v-btn fab dark small color="red">
+        <v-icon>mdi-expand-all-outline</v-icon>
+      </v-btn>
+      <v-btn
+        fab
+        dark
+        small
+        color="gray"
+        href="http://www.github.com/rubennaatje"
+        target="_blank"
+      >
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
+    </v-speed-dial>
+  </div>
+</template>
+
+<script>
+export default {
+  layout: 'dashboard',
+  data: () => ({
+    fab: false,
+    edit: false,
+  }),
+  methods: {
+    save() {
+      console.log('save')
+      this.$refs.dash.save()
+    },
+  },
+}
+</script>
+
+<style>
+/* This is for documentation purposes and will not be needed in your application */
+.v-speed-dial {
+  position: absolute;
+}
+
+.v-btn--floating {
+  position: relative;
+}
+</style>
