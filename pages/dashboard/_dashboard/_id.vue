@@ -83,7 +83,7 @@ export default {
 <style>
 /* This is for documentation purposes and will not be needed in your application */
 .v-speed-dial {
-  position: absolute;
+  position: absolute !important;
 }
 
 .v-btn--floating {
