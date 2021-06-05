@@ -4,14 +4,14 @@
       ref="dash"
       style="height: 100%"
       :edit="edit"
-      dashboard="0"
-      tab="xd"
+      :dashboard="dashboard"
+      :tab="id"
     />
     <CommonTabForm
-      curr-index="3"
+      :curr-index="tabIndex"
       :dialog="dialog"
-      dash-name="0"
-      @click="dialog = false"
+      :dash-name="dashboard"
+      @close="dialog = false"
     />
     <v-speed-dial
       v-model="fab"
@@ -63,7 +63,18 @@ export default {
     edit: false,
     dialog: false,
   }),
-  computed: {},
+  computed: {
+    id() {
+      return this.$route.params.id
+    },
+    dashboard() {
+      return this.$route.params.dashboard
+    },
+    tabIndex() {
+      return this.$store.state.dashboards.dashboards[this.dashboard]?.tabs
+        .length
+    },
+  },
   methods: {
     save() {
       console.log('save')

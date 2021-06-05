@@ -4,10 +4,10 @@
       <v-toolbar dark flat>
         <v-tabs background-color="deep-purple accent-4" center-active dark grow>
           <v-tab
-            v-for="(item, index) in allDashboards"
+            v-for="(item, index) in allDashboards[dashboard].tabs"
             :key="item.index"
             nuxt
-            :to="`/dashboard/test/${index}`"
+            :to="`/dashboard/${dashboard}/${index}`"
             >{{ item.name }}</v-tab
           >
         </v-tabs>
@@ -24,6 +24,9 @@ export default {
     ...mapGetters({
       allDashboards: 'dashboards/getAll',
     }),
+    dashboard() {
+      return this.$route.params.dashboard
+    },
   },
 }
 </script>

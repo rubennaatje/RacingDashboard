@@ -12,6 +12,9 @@ export const actions = {
   saveLayout(context, data) {
     context.commit('SAVE_LAYOUT', data)
   },
+  addTab(context, data) {
+    context.commit('ADD_TAB', data)
+  },
 }
 
 export const mutations = {
@@ -22,6 +25,8 @@ export const mutations = {
     state.dashboards[data.index].tabs[data.tab].layout = data.layout
   },
   ADD_TAB(state, data) {
+    console.log(data)
+    console.log(state)
     state.dashboards[data.dashName].tabs[data.tab] = {
       name: data.name,
       layout: [],

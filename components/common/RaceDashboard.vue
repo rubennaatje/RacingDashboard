@@ -1,14 +1,14 @@
 <template>
   <div>
     <CommonItemForm
-      :curr-index="layout.length"
       v-if="edit"
+      :curr-index="layout.length"
       @add="layout.push($event)"
     />
     <grid-layout
       :layout="layout"
-      :col-num="22"
-      :row-height="22"
+      :col-num="32"
+      :row-height="18"
       :is-draggable="draggable"
       :is-resizable="resizable"
       :vertical-compact="true"
@@ -49,11 +49,9 @@ export default {
     GridItem,
   },
   // eslint-disable-next-line vue/require-prop-types
-  props: ['edit'],
+  props: ['edit', 'dashboard', 'tab'],
   data() {
     return {
-      editing: true,
-      currentTabComponent: 'CommonOutlinedContainer',
       layout: [],
       draggable: true,
       resizable: true,
@@ -61,16 +59,26 @@ export default {
     }
   },
 
+  mounted() {
+    this.layout =
+      JSON.parse(
+        JSON.stringify(
+          this.$store.state.dashboards.dashboards[this.dashboard]?.tabs[
+            this.tab
+          ]?.layout
+        )
+      ) || []
+  },
+
   methods: {
     itemTitle(item) {
       return `${item.i} - ${item.name}`
     },
     save() {
-      console.log('sabe')
       this.$store.dispatch('dashboards/saveLayout', {
         layout: this.layout,
-        index: 0,
-        tab: 'xd',
+        index: this.dashboard,
+        tab: this.tab,
       })
     },
   },

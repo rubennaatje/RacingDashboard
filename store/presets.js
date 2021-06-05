@@ -33,28 +33,28 @@ export const state = () => ({
       name: 'onboard #6',
       component: 'CommonYoutubePlayer',
       props: {
-        videoId: 'VoFjIejgD_I',
+        videoId: 'YnBAkHpxPk4',
       },
     },
     {
       name: 'onboard #7',
       component: 'CommonYoutubePlayer',
       props: {
-        videoId: 'z5of2dqS_nU',
+        videoId: 'Kch6NbE8L60',
       },
     },
     {
       name: 'onboard #33',
       component: 'CommonYoutubePlayer',
       props: {
-        videoId: 'iKQXe52Bs4E',
+        videoId: 'Ef52HmwTeUQ',
       },
     },
     {
       name: 'onboard #44',
       component: 'CommonYoutubePlayer',
       props: {
-        videoId: 'DQTfZ6CEOEg',
+        videoId: 'f5SwyfqTUiM',
       },
     },
     {
@@ -68,21 +68,21 @@ export const state = () => ({
       name: 'onboard #15',
       component: 'CommonYoutubePlayer',
       props: {
-        videoId: '3CDxxy4nSm4',
+        videoId: 'ZhFk9VZT9_Q',
       },
     },
     {
       name: 'onboard #31',
       component: 'CommonYoutubePlayer',
       props: {
-        videoId: 'dUJvukXh0zM',
+        videoId: 'hXLN3LEpLTw',
       },
     },
     {
       name: 'onboard #911',
       component: 'CommonYoutubePlayer',
       props: {
-        videoId: 'CzI7lJFfGhQ',
+        videoId: 'BRYmUk8b0MU',
       },
     },
     {
@@ -110,14 +110,14 @@ export const state = () => ({
       name: 'onboard #101',
       component: 'CommonYoutubePlayer',
       props: {
-        videoId: 'jYkS_ehhNw4',
+        videoId: 'dy1glQX50hA',
       },
     },
     {
       name: 'onboard #110',
       component: 'CommonYoutubePlayer',
       props: {
-        videoId: 'yNAZQGHsaJ4',
+        videoId: 'k0kgvIjNgMc',
       },
     },
     {
