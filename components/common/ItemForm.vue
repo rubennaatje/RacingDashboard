@@ -92,8 +92,8 @@ export default {
     save() {
       if (this.form.preset) {
         this.$emit('add', {
-          x: 6 * this.currIndex,
-          y: 6 * this.currIndex,
+          x: 6 % this.currIndex,
+          y: 6 % this.currIndex,
           w: 6,
           h: 6,
           i: `${this.currIndex}`,
@@ -101,8 +101,8 @@ export default {
         })
       } else {
         this.$emit('add', {
-          x: 6 * this.currIndex,
-          y: 6 * this.currIndex,
+          x: 6 % this.currIndex,
+          y: 6 % this.currIndex,
           w: 6,
           h: 6,
           i: `${this.currIndex}`,

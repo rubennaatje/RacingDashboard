@@ -43,7 +43,7 @@
         dark
         small
         color="gray"
-        href="http://www.github.com/rubennaatje"
+        href="http://www.github.com/rubennaatje/RacingDashboard"
         target="_blank"
       >
         <v-icon>mdi-github</v-icon>
@@ -74,7 +74,6 @@ export default {
   },
   methods: {
     save() {
-      console.log('save')
       this.$refs.dash.save()
     },
   },

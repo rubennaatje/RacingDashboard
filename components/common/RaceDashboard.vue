@@ -7,8 +7,8 @@
     />
     <grid-layout
       :layout="layout"
-      :col-num="32"
-      :row-height="18"
+      :col-num="40"
+      :row-height="40"
       :is-draggable="draggable"
       :is-resizable="resizable"
       :vertical-compact="true"
@@ -60,14 +60,12 @@ export default {
   },
 
   mounted() {
-    this.layout =
-      JSON.parse(
-        JSON.stringify(
-          this.$store.state.dashboards.dashboards[this.dashboard]?.tabs[
-            this.tab
-          ]?.layout
-        )
-      ) || []
+    this.layout = JSON.parse(
+      JSON.stringify(
+        this.$store.state.dashboards.dashboards[this.dashboard]?.tabs[this.tab]
+          ?.layout || []
+      )
+    )
   },
 
   methods: {

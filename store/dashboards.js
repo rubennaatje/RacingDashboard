@@ -1,9 +1,6 @@
-export const state = () => ({
-  dashboards: {
-    0: { index: 0, name: 'main', tabs: { xd: { name: 'xd', layout: [] } } },
-    1: { index: 1, name: 'onboards', tabs: { xd: { name: 'xd', layout: [] } } },
-  },
-})
+import initialObj from '../default'
+
+export const state = () => initialObj
 
 export const actions = {
   addDashboard(context, data) {

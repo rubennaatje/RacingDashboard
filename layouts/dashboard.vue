@@ -1,10 +1,10 @@
 <template>
   <v-app dark>
     <v-main>
-      <v-toolbar dark flat>
-        <v-tabs background-color="deep-purple accent-4" center-active dark grow>
+      <v-toolbar height="35px" dark flat>
+        <v-tabs center-active dark grow height="35px">
           <v-tab
-            v-for="(item, index) in allDashboards[dashboard].tabs"
+            v-for="(item, index) in dashes[dashboard].tabs"
             :key="item.index"
             nuxt
             :to="`/dashboard/${dashboard}/${index}`"
@@ -26,6 +26,9 @@ export default {
     }),
     dashboard() {
       return this.$route.params.dashboard
+    },
+    dashes() {
+      return this.$store.state.dashboards.dashboards
     },
   },
 }
