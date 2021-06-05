@@ -29,16 +29,13 @@
       <v-btn fab dark small color="green" nuxt to="/">
         <v-icon>mdi-home</v-icon>
       </v-btn>
-      <v-btn fab dark small color="green" @click="dialog = true">
-        <v-icon>mdi-home</v-icon>
-      </v-btn>
       <v-btn fab dark small color="indigo" nuxt @click="save">
-        <v-icon>mdi-gear</v-icon>
+        <v-icon>mdi-content-save</v-icon>
       </v-btn>
       <v-btn fab dark small color="red" @click="edit = !edit">
         <v-icon>mdi-pencil</v-icon>
       </v-btn>
-      <v-btn fab dark small color="red">
+      <v-btn fab dark small color="red" @click="dialog = true">
         <v-icon>mdi-expand-all-outline</v-icon>
       </v-btn>
       <v-btn
