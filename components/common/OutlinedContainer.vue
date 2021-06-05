@@ -1,6 +1,6 @@
 <template>
   <div style="height: 100%">
-    <section v-if="!hideOutline" class="fieldset">
+    <section v-if="!hideOutline" class="unclickable fieldset">
       <h1 class="fieldset-title">{{ title }}</h1>
       <slot />
     </section>
@@ -32,6 +32,10 @@ export default {
   margin: -9px 0 0; /* half of font-size */
   background: #121212;
   padding: 0 3px;
+}
+
+.unclickable {
+  pointer-events: none;
 }
 </style>
 © 2021 GitHub, Inc.
