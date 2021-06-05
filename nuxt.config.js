@@ -60,6 +60,7 @@ export default {
 
   router: {
     base: '/RacingDashboard/',
+    mode: 'hash',
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
