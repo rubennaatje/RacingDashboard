@@ -66,7 +66,6 @@ export default {
   computed: {},
   methods: {
     save() {
-      console.log('save')
       this.$refs.dash.save()
     },
   },
