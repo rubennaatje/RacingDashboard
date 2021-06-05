@@ -144,14 +144,14 @@ export const state = () => ({
     },
     {
       name: 'pitlane',
-      component: 'CommonYoutubePlater',
+      component: 'CommonYoutubePlayer',
       props: {
         videoId: 'UHa-kz6AC9g',
         muted: true,
       },
     },
     {
-      name: 'pitlane',
+      name: 'main stream mirror',
       component: 'CommonIFrame',
       props: {
         url: 'https://player.twitch.tv/?channel=el_bowgrease&parent=www.example.com',
