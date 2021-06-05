@@ -15,7 +15,7 @@
       :use-css-transforms="true"
     >
       <grid-item
-        v-for="item in layout"
+        v-for="(item, itemIndex) in layout"
         :key="item.i"
         :static="!edit"
         :x="item.x"
@@ -28,6 +28,7 @@
           class="h-full w-full"
           :title="itemTitle(item)"
           :hide-outline="!edit"
+          @delete="removeItem(itemIndex)"
         >
           <component
             :is="item.component"
@@ -78,6 +79,10 @@ export default {
         index: this.dashboard,
         tab: this.tab,
       })
+      this.index++
+    },
+    removeItem(i) {
+      this.layout.splice(i, 1)
     },
   },
 }

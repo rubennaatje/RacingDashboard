@@ -43,7 +43,7 @@ export default {
         dashName: this.dashName,
         name: this.form.name,
       })
-      this.form.name = ''
+      // this.form.name = ''
     },
     close() {
       this.$emit('close')

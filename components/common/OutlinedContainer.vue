@@ -1,8 +1,10 @@
 <template>
   <div style="height: 100%">
-    <section v-if="!hideOutline" class="unclickable fieldset">
-      <h1 class="fieldset-title">{{ title }}</h1>
-      <slot />
+    <section v-if="!hideOutline" class="fieldset">
+      <h1 class="fieldset-title">
+        {{ title }} - <span @click="$emit('delete')">delete</span>
+      </h1>
+      <slot class="unclickable" />
     </section>
     <slot v-else />
   </div>

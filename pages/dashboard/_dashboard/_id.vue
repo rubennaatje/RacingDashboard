@@ -68,8 +68,9 @@ export default {
       return this.$route.params.dashboard
     },
     tabIndex() {
-      return this.$store.state.dashboards.dashboards[this.dashboard]?.tabs
-        .length
+      return Object.values(
+        this.$store.state.dashboards.dashboards[this.dashboard].tabs
+      ).length
     },
   },
   methods: {

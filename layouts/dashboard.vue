@@ -4,7 +4,7 @@
       <v-toolbar height="35px" dark flat>
         <v-tabs center-active dark grow height="35px">
           <v-tab
-            v-for="(item, index) in dashes[dashboard].tabs"
+            v-for="(item, index) in dashes"
             :key="item.index"
             nuxt
             :to="`/dashboard/${dashboard}/${index}`"
@@ -28,7 +28,7 @@ export default {
       return this.$route.params.dashboard
     },
     dashes() {
-      return this.$store.state.dashboards.dashboards
+      return this.$store.state.dashboards.dashboards[this.dashboard].tabs
     },
   },
 }

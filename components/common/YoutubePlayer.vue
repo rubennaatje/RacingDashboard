@@ -17,7 +17,8 @@ export default {
     return {
       playerVars: {
         autoplay: 1,
-        origin: 'http://localhost:3000/',
+        origin: window.location.origin,
+        modestbranding: 1,
       },
     }
   },

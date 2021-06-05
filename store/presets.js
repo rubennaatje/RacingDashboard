@@ -154,7 +154,14 @@ export const state = () => ({
       name: 'main stream mirror',
       component: 'CommonIFrame',
       props: {
-        url: 'https://player.twitch.tv/?channel=el_bowgrease&parent=localhost',
+        url: `https://player.twitch.tv/?channel=el_bowgrease&parent=${window.location.origin}`,
+      },
+    },
+    {
+      name: 'N24 logo',
+      component: 'img',
+      props: {
+        src: `https://www.24h-rennen.de/wp-content/themes/zvhnbr/assets/images/24h-logo_mono.png`,
       },
     },
   ],
