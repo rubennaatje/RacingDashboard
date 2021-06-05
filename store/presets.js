@@ -150,6 +150,13 @@ export const state = () => ({
         muted: true,
       },
     },
+    {
+      name: 'pitlane',
+      component: 'CommonIFrame',
+      props: {
+        url: 'https://player.twitch.tv/?channel=el_bowgrease&parent=www.example.com',
+      },
+    },
   ],
 })
 

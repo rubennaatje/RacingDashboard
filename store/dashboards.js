@@ -25,8 +25,6 @@ export const mutations = {
     state.dashboards[data.index].tabs[data.tab].layout = data.layout
   },
   ADD_TAB(state, data) {
-    console.log(data)
-    console.log(state)
     state.dashboards[data.dashName].tabs[data.tab] = {
       name: data.name,
       layout: [],
