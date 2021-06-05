@@ -19,7 +19,8 @@ export const state = () => ({
       name: 'main stream',
       component: 'CommonYoutubePlayer',
       props: {
-        videoId: '0gtNvIPE4Dc',
+        videoId: 'MXlRJ0-ETyI',
+        muted: false,
       },
     },
     {
@@ -34,6 +35,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'YnBAkHpxPk4',
+        muted: true,
       },
     },
     {
@@ -41,6 +43,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'Kch6NbE8L60',
+        muted: true,
       },
     },
     {
@@ -48,6 +51,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'Ef52HmwTeUQ',
+        muted: true,
       },
     },
     {
@@ -55,6 +59,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'f5SwyfqTUiM',
+        muted: true,
       },
     },
     {
@@ -62,6 +67,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'Yn5Gyc5s7GE',
+        muted: true,
       },
     },
     {
@@ -69,6 +75,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'ZhFk9VZT9_Q',
+        muted: true,
       },
     },
     {
@@ -76,6 +83,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'hXLN3LEpLTw',
+        muted: true,
       },
     },
     {
@@ -83,6 +91,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'BRYmUk8b0MU',
+        muted: true,
       },
     },
     {
@@ -90,6 +99,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'GbZRNOkVeaQ',
+        muted: true,
       },
     },
     {
@@ -97,6 +107,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'p5qKjfx3Coo',
+        muted: true,
       },
     },
     {
@@ -104,6 +115,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: '9L6457LBcjM',
+        muted: true,
       },
     },
     {
@@ -111,6 +123,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'dy1glQX50hA',
+        muted: true,
       },
     },
     {
@@ -118,6 +131,7 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'k0kgvIjNgMc',
+        muted: true,
       },
     },
     {
@@ -125,6 +139,15 @@ export const state = () => ({
       component: 'CommonYoutubePlayer',
       props: {
         videoId: 'VPjGOot_Mfc',
+        muted: true,
+      },
+    },
+    {
+      name: 'pitlane',
+      component: 'CommonYoutubePlater',
+      props: {
+        videoId: 'UHa-kz6AC9g',
+        muted: true,
       },
     },
   ],

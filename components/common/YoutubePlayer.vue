@@ -11,7 +11,8 @@
 
 <script>
 export default {
-  props: ['videoId'],
+  // eslint-disable-next-line vue/require-prop-types
+  props: ['videoId', 'muted'],
   data() {
     return {
       playerVars: {
@@ -22,9 +23,10 @@ export default {
   },
   methods: {
     speedup() {
-      console.log(' we are watching!!!')
       this.$refs.youtube.player.setPlaybackRate(2)
-      this.$refs.youtube.player.setVolume(0)
+      if (this.muted) {
+        this.$refs.youtube.player.setVolume(0)
+      }
     },
   },
 }
