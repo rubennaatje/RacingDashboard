@@ -1,5 +1,8 @@
-/*! vue-grid-layout - 2.3.12 | (c) 2015, 2021  Gustavo Santos (JBay Solutions) <gustavo.santos@jbaysolutions.com> (http://www.jbaysolutions.com) | https://github.com/jbaysolutions/vue-grid-layout */
-
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
 
 /* @preserve
  * Leaflet 1.7.1, a JS library for interactive maps. http://leafletjs.com
@@ -21,9 +24,24 @@
 /*! (c) 2020 Andrea Giammarchi */
 
 /**
+ * @license
+ * Video.js 6.13.0 <http://videojs.com/>
+ * Copyright Brightcove, Inc. <https://www.brightcove.com/>
+ * Available under Apache License Version 2.0
+ * <https://github.com/videojs/video.js/blob/master/LICENSE>
+ *
+ * Includes vtt.js <https://github.com/mozilla/vtt.js>
+ * Available under Apache License Version 2.0
+ * <https://github.com/mozilla/vtt.js/blob/master/LICENSE>
+ */
+
+/**
 * @link https://github.com/gajus/sister for the canonical source repository
 * @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause
 */
+
+
+/*! vue-grid-layout - 2.3.12 | (c) 2015, 2021  Gustavo Santos (JBay Solutions) <gustavo.santos@jbaysolutions.com> (http://www.jbaysolutions.com) | https://github.com/jbaysolutions/vue-grid-layout */
 
 
 /*!
@@ -43,3 +61,9 @@
  * (c) 2021 Evan You
  * @license MIT
  */
+
+
+/*! vue-grid-layout - 2.3.12 | (c) 2015, 2021  Gustavo Santos (JBay Solutions) <gustavo.santos@jbaysolutions.com> (http://www.jbaysolutions.com) | https://github.com/jbaysolutions/vue-grid-layout */
+
+
+/*! vue-grid-layout - 2.3.12 | (c) 2015, 2021  Gustavo Santos (JBay Solutions) <gustavo.santos@jbaysolutions.com> (http://www.jbaysolutions.com) | https://github.com/jbaysolutions/vue-grid-layout */
