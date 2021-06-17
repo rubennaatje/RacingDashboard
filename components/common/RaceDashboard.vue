@@ -7,8 +7,8 @@
     />
     <grid-layout
       :layout="layout"
-      :col-num="40"
-      :row-height="40"
+      :col-num="32"
+      :row-height="windowHeight / 18"
       :is-draggable="draggable"
       :is-resizable="resizable"
       :vertical-compact="true"
@@ -57,6 +57,7 @@ export default {
       draggable: true,
       resizable: true,
       index: 0,
+      windowHeight: window.innerHeight,
     }
   },
 
@@ -67,9 +68,13 @@ export default {
           ?.layout || []
       )
     )
+    window.addEventListener('resize', this.updateHeight)
   },
 
   methods: {
+    updateHeight() {
+      this.windowHeight = window.innerHeight
+    },
     itemTitle(item) {
       return `${item.i} - ${item.name}`
     },

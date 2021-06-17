@@ -18,11 +18,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .fieldset {
   position: relative;
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 1px;
   width: 100%;
   height: 100%;
 }
@@ -38,6 +38,10 @@ export default {
 
 .unclickable {
   pointer-events: none;
+}
+.video-js {
+  width: 100%;
+  height: 100%;
 }
 </style>
 © 2021 GitHub, Inc.

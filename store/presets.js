@@ -17,10 +17,10 @@ export const state = () => ({
     },
     {
       name: 'main stream',
-      component: 'CommonYoutubePlayer',
+      component: 'CommonVideoPlayer',
       props: {
-        videoId: 'MXlRJ0-ETyI',
-        muted: false,
+        videoUrl:
+          'https://moctobpltc-i.akamaihd.net/hls/live/571329/eight/playlist.m3u8',
       },
     },
     {

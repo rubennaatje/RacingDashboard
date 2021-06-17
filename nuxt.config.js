@@ -20,13 +20,14 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['video.js/dist/video-js.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/vue-youtube.js', mode: 'client' },
     { src: '~plugins/leaflet.js', ssr: false },
     { src: '~/plugins/vuex-persist', ssr: false },
+    { src: '~/plugins/video-player', ssr: false },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

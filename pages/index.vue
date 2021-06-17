@@ -4,7 +4,7 @@
       <v-subheader>dashboards</v-subheader>
       <v-list-item-group color="primary">
         <v-list-item v-for="(item, i) in dashboards" :key="i">
-          <nuxt-link :to="`/dashboard/${item.index}/xd`">
+          <nuxt-link :to="`/dashboard/${item.index}/main`">
             <v-list-item-content>
               <v-list-item-title v-text="item.name"></v-list-item-title>
             </v-list-item-content>

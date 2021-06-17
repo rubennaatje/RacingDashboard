@@ -92,19 +92,19 @@ export default {
     save() {
       if (this.form.preset) {
         this.$emit('add', {
-          x: 6 * this.currIndex,
-          y: 6 * this.currIndex,
-          w: 6,
-          h: 6,
+          x: 3 * this.currIndex,
+          y: 3 * this.currIndex,
+          w: 3,
+          h: 3,
           i: `${this.currIndex}`,
           ...this.form.preset,
         })
       } else {
         this.$emit('add', {
-          x: 6 * this.currIndex,
-          y: 6 * this.currIndex,
-          w: 6,
-          h: 6,
+          x: 3 * this.currIndex,
+          y: 3 * this.currIndex,
+          w: 3,
+          h: 3,
           i: `${this.currIndex}`,
           name: this.form.name,
           component: 'CommonYoutubePlayer',
