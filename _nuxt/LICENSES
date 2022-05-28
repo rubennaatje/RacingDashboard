@@ -20,6 +20,9 @@
  */
 
 
+/*! vue-grid-layout - 2.3.12 | (c) 2015, 2021  Gustavo Santos (JBay Solutions) <gustavo.santos@jbaysolutions.com> (http://www.jbaysolutions.com) | https://github.com/jbaysolutions/vue-grid-layout */
+
+
 /*
 object-assign
 (c) Sindre Sorhus
@@ -61,9 +64,3 @@ object-assign
 * @link https://github.com/gajus/sister for the canonical source repository
 * @license https://github.com/gajus/sister/blob/master/LICENSE BSD 3-Clause
 */
-
-
-/*! vue-grid-layout - 2.3.12 | (c) 2015, 2021  Gustavo Santos (JBay Solutions) <gustavo.santos@jbaysolutions.com> (http://www.jbaysolutions.com) | https://github.com/jbaysolutions/vue-grid-layout */
-
-
-/*! vue-grid-layout - 2.3.12 | (c) 2015, 2021  Gustavo Santos (JBay Solutions) <gustavo.santos@jbaysolutions.com> (http://www.jbaysolutions.com) | https://github.com/jbaysolutions/vue-grid-layout */
